@@ -1,0 +1,141 @@
+// Main Color
+$blue: #0061FF;
+
+$lightblue: #7BADFF;
+$lightblue-2: #C7DCFF;
+
+// Text Color
+
+$black: #1A1A1A;
+$black2: #484848;
+$white: #ffffff;
+$gray: #959595;
+
+// Border redius
+
+.border-10{
+    border-radius: 10px;
+}
+.border-20{
+    border-radius: 20px;
+}
+.border-31{
+    border-radius: 31px;
+}
+.border-50{
+    border-radius: 50%;
+}
+
+// Transition
+
+$motion: all 0.3 ease;
+
+// Font family
+
+%aeonik-regular-14{
+    font-weight: 400;
+    font-family: "Aeonik-Regular";
+    font-size: 14px;
+    line-height: 16px;
+}
+
+%aeonik-regular-16{
+    font-weight: 400;
+    font-family: "Aeonik-Regular";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+%aeonik-regular-18{
+    font-weight: 400;
+    font-family: "Aeonik-Regular";
+    font-size: 18px;
+    line-height: 27px;
+}
+
+%aeonik-regular-20{
+    font-weight: 400;
+    font-family: "Aeonik-Regular";
+    font-size: 20px;
+    line-height: 30px;
+}
+
+%aeonik-medium-16{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 24px;
+    font-size: 16px;
+}
+
+%aeonik-medium-18{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 21px;
+    font-size: 18px;
+}
+%aeonik-medium-20{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 26px;
+    font-size: 20px;
+}
+
+
+%aeonik-medium-24{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 28px;
+    font-size: 24px;
+}
+
+%aeonik-medium-32{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 38px;
+    font-size: 32px;
+}
+
+%aeonik-medium-56{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 72px;
+    font-size: 56px;
+}
+%aeonik-medium-60{
+    font-weight: 500;
+    font-family: "Aeonik-Medium";
+    line-height: 78px;
+    font-size: 60px;
+}
+
+%productsans-regular-16{
+    font-weight: 400;
+    font-family: "Product-Sans" !important;
+    line-height: 19px;
+    font-size: 16px;
+}
+
+
+
+.aeonik-regular-16{
+    @extend %aeonik-regular-16;
+}
+.aeonik-medium-16{
+    @extend %aeonik-medium-16;
+}
+.aeonik-medium-18{
+    @extend %aeonik-medium-18;
+}
+.aeonik-medium-24{
+    @extend %aeonik-medium-24;
+}
+.aeonik-medium-32{
+    @extend %aeonik-medium-32;
+}
+.aeonik-medium-56{
+    @extend %aeonik-medium-56;
+}
+
+.productsans-regular-16{
+    @extend %productsans-regular-16
+}

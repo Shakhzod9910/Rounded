@@ -1,0 +1,87 @@
+.tabbar{
+    display: flex !important;
+    flex-direction: row !important;
+
+    .ant-radio-button-wrapper{
+        border: none !important;
+        margin-right: 16px;
+        border-radius: 32px !important;
+        @extend %aeonik-medium-18;
+        color: #484848;
+        padding: 18px 40px !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+       
+        
+        .ant-radio-button{
+           display: flex !important;
+           align-items: center !important; 
+          &:focus{
+              box-shadow: none;
+              
+          }
+        }
+       
+
+        
+        &::before{
+            display: none !important;
+        }
+    }
+    .ant-radio-button-wrapper-checked{
+        background-color: #E6EFFF !important; 
+        border-radius: 32px !important;
+        border: none;
+        span{
+            color: $blue !important;
+        }
+    }
+
+    
+    
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within{
+    box-shadow: none !important;
+}
+
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within {
+   box-shadow: 0 0 0 3px #fff !important;
+}
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):focus-within{
+    box-shadow: 0 0 0 3px #fff !important;
+}
+.ant-radio-button-wrapper:focus-within {
+    box-shadow: 0 0 0 3px #fff !important; 
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 64px;
+    li{
+        height: auto;
+        .img-wrapper{
+            min-width: 540px;
+        }
+
+        h1{
+            margin-top: 16px;
+            @extend %aeonik-medium-20;
+            color: $black;
+            max-width: 250px;
+            margin-top: 16px;
+        }
+        span{
+            @extend %aeonik-regular-16;
+            color: $gray;
+            margin-top: 8px;
+            margin-bottom: 48px;
+            display: block;
+        }
+    }
+}

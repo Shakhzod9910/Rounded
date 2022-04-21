@@ -1,0 +1,56 @@
+.partners{
+    background: linear-gradient(180deg, rgba(245, 244, 247, 0) 0%, #F5F4F7 100%);
+    margin-bottom: 100px;
+    .title{
+        @extend %aeonik-medium-16;
+        color: $lightblue;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 0;
+
+    }
+    h1{
+        text-align: center;
+        margin-top: 8px;
+        @extend %aeonik-medium-32;
+        color: $black;
+    }
+    .paragraph{
+        
+        width: 1;
+        max-width: 387px;
+        text-align: center;
+        margin-right: auto; 
+        margin-left: auto;
+        @extend %aeonik-regular-18 ;
+        color: $gray;
+    }
+
+    ul{
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 48px;
+        padding-bottom: 70px;
+        li{
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;justify-content: center;
+            flex-direction: column;
+            background-color: $white;
+            span{
+                margin-top:10px;
+                @extend %aeonik-medium-16;
+                color: #484848;
+            }
+        }
+    }
+}

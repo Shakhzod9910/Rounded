@@ -1,0 +1,238 @@
+.services{
+    .home-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
+        .left-wrapper{
+            .digital{
+                text-transform: uppercase;
+                color: $lightblue;
+                margin-bottom: 8px;
+            }
+            h1{
+                @extend %aeonik-medium-56;
+                max-width: 320px;
+                width: 100%;
+                margin-bottom: 16px;
+                color: $black;
+            }
+            p{
+                max-width: 387px;
+                width: 100%;
+                @extend %aeonik-regular-18;
+                color: $gray;
+                margin-bottom: 32px;
+            }
+           
+            
+        }
+        .right-wrapper{
+            position: relative;
+            padding-left: 120px;
+            .img-wrapper{
+                min-width: 490px;
+                width: 100%;
+            }
+            .img2-wrapper{
+                position: absolute;
+                top: 100px;
+                left: -100px;
+            }
+        }
+    }
+
+    .btn-wrapper{
+        display: flex;
+        justify-content: center;
+        margin-top: 180px;
+        margin-bottom: 64px;
+
+        .light-btn{
+            display: flex;
+            align-items: center;
+            margin-right: 16px;
+            border: none !important;
+            background-color: #E6EFFF;
+            @extend %aeonik-medium-18;
+            &::after{
+                display: none;
+                box-shadow: 1px 1px 1px black;
+            }
+            div{
+                margin-left: 14px;
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+
+    .websites{
+        background: linear-gradient(180deg, #F5F4F7 0%, rgba(245, 244, 247, 0) 100%);
+        .websites-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .left-wrapper{
+                .header{
+                    margin-top: 150px;
+                    display: block;
+                    @extend %aeonik-medium-16;
+                    color: $lightblue;
+                    text-transform: uppercase;
+
+                }
+                h1{
+                    @extend %aeonik-medium-32;
+                    color: $black;
+                    margin-top: 8px;
+                }
+                p{
+                    max-width: 482px;
+                    @extend %aeonik-regular-16;
+                    color: $gray;
+                    margin-top: 16px;
+                    margin-bottom: 12px;
+                }
+                h4{
+                    @extend %aeonik-medium-16;
+                    color: #484848;
+                    margin-top: 8px;
+                }
+                .start-btn{
+                    margin-top: 32px;
+                }
+            }
+            .right-wrapper{
+                .img-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .tools{
+            padding-bottom: 100px;
+            .header{
+                display: block;
+                @extend %aeonik-medium-16;
+                color: $lightblue;
+                text-transform: uppercase;
+                display: block;
+                text-align: center;
+                margin-top: 60px;
+            }
+            h1{
+                @extend %aeonik-medium-32;
+                color: $black;
+                margin-top: 8px;
+                text-align: center;
+            }
+            p{
+                max-width: 482px;
+                @extend %aeonik-regular-16;
+                color: $gray;
+                margin-top: 16px;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+            }
+            .tool-list{
+                max-width: 900px;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                max-width: 700px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 48px;
+               
+                li{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $white;
+                    span{
+                        @extend %aeonik-medium-16;
+                        color: #484848;
+                    }
+                }
+            }
+        }
+    }
+    .works{
+        display: grid;
+        grid-template-columns: 335px 1fr;
+        gap: 40px;
+        padding: 50px 0 50px 0;
+        .left-side-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title{
+                @extend %aeonik-medium-16;
+                color: $lightblue;
+                text-transform: uppercase;
+            }
+            h1{
+                @extend %aeonik-medium-32;
+                color: $black;
+                margin-top: 8px;
+            }
+            p{
+                max-width: 290px;
+                width: 100%;
+                @extend %aeonik-regular-16;
+                color: $gray;
+                margin-top: 16px;
+                margin-bottom: 32px;
+            }
+            .btn-primary{
+                @extend %aeonik-medium-18;
+                margin-top: 0 !important;
+                
+            }
+        }
+        .right-side-wrapper{
+            overflow: hidden;
+            ul{
+                display: flex;
+                // overflow: hidden;
+                // .swiper-slide{
+                //     margin-right: 40px;
+                //     border: 1px solid black;
+                //     width: 346px;
+                // }
+                
+                li{
+                    padding-right: 40px !important;
+                    display: flex;
+                    width: 346px;
+                    flex-direction: column;
+                    
+                    
+                    .project-img-wrapper{
+                        width: 346px;
+                        height: 400px;
+                        padding-right: 40px !important;
+                    }
+                    h2{
+                        margin-top: 24px;
+                        @extend %aeonik-medium-24;
+                        color: $black;
+                    }
+                    p{
+                        margin-top: 8px;
+                        @extend %aeonik-regular-16;
+                        color: $gray;
+                    }
+                }
+            } 
+        }
+    }
+}

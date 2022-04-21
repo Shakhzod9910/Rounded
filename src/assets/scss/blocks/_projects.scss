@@ -1,0 +1,134 @@
+.projects{
+    .header{
+        margin-top: 100px;
+        margin-bottom: 90px;
+        span{
+            @extend %aeonik-medium-16;
+            color: $lightblue;
+            text-transform: uppercase;
+        }
+        h1{
+            @extend %aeonik-medium-32;
+            color: $black;
+            margin-top: 8px;
+        }
+        p{
+            max-width: 387px;
+            width: 100%;
+            @extend %aeonik-regular-16;
+            color: $gray;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .travel{
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        margin-top: 140px;
+        max-width: 1400px;
+        margin-right: auto;
+        margin-left: auto;
+        .left-side-wrapper{
+            .box{
+                padding-top: 50px;
+                padding-bottom: 50px;
+                background-color: #C7DCFF;
+                display: flex;
+                justify-content: center;
+                .img-wrapper{
+                    width: 437px;
+                }
+            }
+        }
+        .right-side-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .content{
+                max-width: 290px;
+                .title{
+                    @extend %aeonik-regular-16;
+                    text-transform: uppercase;
+                    color: $lightblue;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+                h1{
+                    @extend %aeonik-medium-24;
+                    color: $black;  
+                    margin-bottom: 16px;
+                }
+                p{
+                    @extend %aeonik-regular-16;
+                    color: $gray;
+                    margin-bottom: 32px;
+                }
+                .btn{
+                    @extend %aeonik-medium-20;
+                }
+            }
+        }
+        
+    }
+    .reverse{
+        display: grid;
+        grid-template-columns:1fr 600px ;
+        
+        .content{
+            margin-right: 80px;
+        }
+        margin-bottom: 150px;
+    }
+    .second-travel{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 70px;
+        max-width: 1400px;
+        margin-right: auto;
+        margin-left: auto;
+        .left-side-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .content{
+                max-width: 290px;
+                .title{
+                    @extend %aeonik-regular-16;
+                    text-transform: uppercase;
+                    color: $lightblue;
+                    margin-bottom: 8px;
+                    display: block;
+                }
+                h1{
+                    @extend %aeonik-medium-24;
+                    color: $black;  
+                    margin-bottom: 16px;
+                }
+                p{
+                    @extend %aeonik-regular-16;
+                    color: $gray;
+                    margin-bottom: 32px;
+                }
+                .tool-item{
+                    display: flex;
+                }
+                .tool{
+                    margin-top: 24px;
+                    margin-bottom: 32px;
+                    margin-left: 10px;
+                    margin-right: 50px;
+                    @extend %aeonik-medium-16;
+                    font-size: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50px
+                }
+                .btn{
+                    @extend %aeonik-medium-20;
+                }
+            }
+        }
+    }
+}

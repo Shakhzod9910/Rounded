@@ -1,0 +1,161 @@
+.contact{
+    .contact-wrapper{
+        height: 100vh;
+        width:100%;
+        background-color: $blue;
+    }
+    
+    .bcg-wrapper{
+        position: absolute;
+        transform: rotate(180deg);
+    }
+    .form-wrapper{
+        display: flex;
+        position: relative;
+        
+        .content{
+            position: relative;
+            z-index: 2;
+            span{
+                @extend %aeonik-medium-18;
+                color: $white;
+                opacity: 0.5;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                display: block;
+                margin-top: 150px;
+            }
+            h1{
+                @extend %aeonik-medium-60;
+                color: $white;
+                margin-bottom: 16px;
+            }
+            p{
+                max-width: 387px;
+                @extend %aeonik-regular-18;
+                color: $white;
+                opacity: 0.8;
+                margin-right: 100px;
+            }
+
+        }
+        form{
+            width: 540px;
+            margin-top: 115px;
+            position: relative;
+            z-index: 2;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.14);
+            border-radius: 10px;
+            padding: 40px;
+            .inputs{
+                display: flex;
+                flex-direction: column;
+                margin-top: 16px;
+                
+                label{
+                    @extend %aeonik-medium-16;
+                    color: #676767;
+                    margin-bottom: 10px;
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    border: 1px solid #C8C8C8;
+                    padding: 16px 20px;
+                    @extend %productsans-regular-16;
+                    margin-bottom: 20px !important;
+                 
+                }
+            }
+            .chackboxes{
+                margin-top: 40px;
+                
+                h2{
+                    @extend %aeonik-medium-16;
+                    color: #676767;
+                    margin-bottom: 10px;
+                }
+                .select-services{
+                    display: flex;
+                    flex-wrap: wrap;
+                    span{
+                        display: block;
+                        border: 1px solid #C8C8C8;
+                        padding: 16px 20px;
+                        margin-right: 16px;
+                        margin-bottom: 16px;
+                        border-radius: 51px;
+                        @extend %productsans-regular-16;
+                        color: #C8C8C8;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    }
+                    .active{
+                        color: $white;
+                        background-color: $blue;
+                        border: 1px solid $blue;
+                    }
+                }
+                
+            }
+            .textbox{
+                h2{
+                    @extend %aeonik-medium-16;
+                    color: #676767;
+                    margin-bottom: 10px;
+                }
+                .textarea{
+                    resize: none;
+                    width: 100%;
+                    border: 1px solid #C8C8C8;
+                    border-radius: 10px;
+                    height: 120px !important;
+                    @extend %productsans-regular-16;
+                    padding: 16px 20px;
+                    outline: none;
+                }
+            }
+
+            .submit-btn{
+                @extend %aeonik-medium-18;
+                margin-top: 32px;
+            }
+        }
+        
+    }
+    .adress{
+        margin-top: 450px;
+        margin-bottom: 100px;
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            li{
+                span{
+                    @extend %aeonik-regular-16;
+                    color: #BCBCBC;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                }
+                p{
+                    max-width: 238px;
+                    color: #484848;
+                    @extend %aeonik-regular-20;
+                }
+            }
+        }
+    }
+    .map-wrapper{
+        height: 400px;
+        width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        .map{
+            border: none !important;
+        }
+        
+    }
+}

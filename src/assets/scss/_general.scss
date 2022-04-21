@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    max-width: 1130px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navcontainer{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.blue-theme{
+    background-color: $blue !important;
+    .user {
+        .globe-wrapper{
+            .icon{
+               color:  #fff;
+            }
+        }
+        .user-lang{
+           color: $white; 
+        }  
+   }
+   .navlink{
+    color: $white !important;
+ }
+ .ant-tabs-ink-bar{
+     background: #fff;
+ }
+ .ant-tabs{
+    .ant-tabs-nav{
+        .ant-tabs-nav-wrap{
+            .ant-tabs-nav-list{
+                .ant-tabs-tab-active{
+                    a{
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+.icon{
+    width: 23px;
+    height: 23px;
+}
