@@ -119,4 +119,3 @@ const TabBar = () => {
 
 export default TabBar;
 
-// comment added
