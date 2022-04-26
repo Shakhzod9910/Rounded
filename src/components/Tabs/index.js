@@ -120,4 +120,4 @@ const TabBar = () => {
 export default TabBar;
 
 
-
+// yana shunaqa naarsa
